@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 import com.ulasalle.cobir.Buscador;
 import com.ulasalle.cobir.Caracteristica;
-import com.ulasalle.cobir.IndexadorParalelo;
+import com.ulasalle.cobir.Opcion;
 
 public class Main {
 
@@ -23,15 +23,15 @@ public class Main {
 
         Buscador buscador=new Buscador();
 		
-        File imagen=new File("C:\\Users\\alxs1\\Desktop\\Pruebas y Calidad de Software\\coil-100\\coil-100\\obj57__0.png");
+        File imagen=new File("C:\\Users\\Christian\\Downloads\\coil-100\\coil-100\\obj57__0.png");
         
         long start = System.currentTimeMillis();
         String[] resultado = buscador
                 .buscar(
                         imagen,
-                        "C:\\Users\\alxs1\\Desktop\\Pruebas y Calidad de Software\\lucene-datos-cobir\\nombre_mi_bd",
+                        "C:\\Users\\Christian\\Downloads\\coil-100\\coil-100\\db",
                         10,
-                        Caracteristica.getInstancia().getCaracteristica(Caracteristica.Opcion.AutoColorCorrelogram));
+                        Caracteristica.getInstancia().getCaracteristica( Opcion.AutoColorCorrelogram));
         long tiempo  =(System.currentTimeMillis() - start);
         System.out.println("Resultados obtenidos en " + buscador.tiempoTranscurrido + " milisegundos");
         

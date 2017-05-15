@@ -8,7 +8,8 @@ import static org.junit.Assert.*;
  * @author alxs1, @date 12/05/17 19:42
  */
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
+    @Test 
+    public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
