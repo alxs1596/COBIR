@@ -1,4 +1,4 @@
-package com.gui.utiles;
+package com.ulasalle.gui.utiles;
 
 import java.awt.Image;
 import java.io.File;
@@ -13,7 +13,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  *
  * @author Christian
  */
-public class UtilesGUI {
+public class UtilesGUI{
 
     public void abrirRutas(JLabel label) {
         JFileChooser fileChooser = new JFileChooser();
@@ -31,6 +31,11 @@ public class UtilesGUI {
                 e.printStackTrace();
             }
         }
+    }
+    
+    
+    public void guardarImagenes() {
+        
     }
 
 }
