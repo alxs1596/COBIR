@@ -20,12 +20,14 @@ import javax.swing.JScrollPane;
 
 /**
  *
- * @author Christian
+ * @author Christian xdxdxd mas nahh 
  */
 public class PanelImagen extends  JPanel{
     public PanelImagen() {
             setLayout(new GridLayout(0, 4, 5, 5));;
-            File[] files = new File("D:\\db\\").listFiles(new java.io.FileFilter() {
+            // Cambiar esta ruta por la de las imagenes
+            String rutaImagenes = "C:\\Users\\alxs1\\Desktop\\Pruebas y Calidad de Software\\coil-100\\coil-100\\";
+            File[] files = new File(rutaImagenes).listFiles(new java.io.FileFilter() {
                 @Override
                 public boolean accept(File pathname) {
                     String name = pathname.getName().toLowerCase();
