@@ -163,14 +163,14 @@ public class Principal extends javax.swing.JFrame {
         );
 
         panelBibliotecaImagen.setAutoscrolls(true);
-        panelBibliotecaImagen.setLayout(new java.awt.GridLayout(10, 2, 1, 1));
+        panelBibliotecaImagen.setLayout(new java.awt.GridLayout());
 
         javax.swing.GroupLayout tabAdministrarLayout = new javax.swing.GroupLayout(tabAdministrar);
         tabAdministrar.setLayout(tabAdministrarLayout);
         tabAdministrarLayout.setHorizontalGroup(
             tabAdministrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tabAdministrarLayout.createSequentialGroup()
-                .addComponent(panelBibliotecaImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 577, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelBibliotecaImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );

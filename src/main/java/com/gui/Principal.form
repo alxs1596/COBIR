@@ -183,7 +183,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="panelBibliotecaImagen" min="-2" pref="577" max="-2" attributes="0"/>
+                      <Component id="panelBibliotecaImagen" pref="577" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -253,10 +253,8 @@
               </Properties>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                <Property name="columns" type="int" value="2"/>
-                <Property name="horizontalGap" type="int" value="1"/>
-                <Property name="rows" type="int" value="10"/>
-                <Property name="verticalGap" type="int" value="1"/>
+                <Property name="columns" type="int" value="0"/>
+                <Property name="rows" type="int" value="1"/>
               </Layout>
             </Container>
           </SubComponents>
