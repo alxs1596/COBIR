@@ -40,6 +40,7 @@ public class Principal extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
         panelBibliotecaImagen = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -163,21 +164,25 @@ public class Principal extends javax.swing.JFrame {
         );
 
         panelBibliotecaImagen.setAutoscrolls(true);
-        panelBibliotecaImagen.setLayout(new java.awt.GridLayout());
+        panelBibliotecaImagen.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        java.awt.GridBagLayout panelBibliotecaImagenLayout = new java.awt.GridBagLayout();
+        new java.awt.GridBagLayout().columnWidths = new int[] {2};
+        panelBibliotecaImagen.setLayout(panelBibliotecaImagenLayout);
+        jScrollPane1.setViewportView(panelBibliotecaImagen);
 
         javax.swing.GroupLayout tabAdministrarLayout = new javax.swing.GroupLayout(tabAdministrar);
         tabAdministrar.setLayout(tabAdministrarLayout);
         tabAdministrarLayout.setHorizontalGroup(
             tabAdministrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(tabAdministrarLayout.createSequentialGroup()
-                .addComponent(panelBibliotecaImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         tabAdministrarLayout.setVerticalGroup(
             tabAdministrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panelBibliotecaImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
         );
 
         jTabbedPane1.addTab("Administrar Imagen", tabAdministrar);
@@ -256,6 +261,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel labelImagen;
     private javax.swing.JPanel panelBibliotecaImagen;

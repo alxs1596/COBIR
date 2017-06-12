@@ -6,6 +6,8 @@
 package com.ulasalle.gui.utiles;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.io.File;
 import java.io.IOException;
@@ -22,9 +24,7 @@ import javax.swing.JScrollPane;
  */
 public class PanelImagen extends  JPanel{
     public PanelImagen() {
-            setLayout(new GridLayout(0, 2, 5, 5));
-            JPanel panel = new JPanel();
-            JScrollPane scroller = new JScrollPane(panel);
+            setLayout(new GridLayout(0, 4, 5, 5));;
             File[] files = new File("D:\\db\\").listFiles(new java.io.FileFilter() {
                 @Override
                 public boolean accept(File pathname) {
@@ -36,7 +36,7 @@ public class PanelImagen extends  JPanel{
             });
             Arrays.sort(files);
             int count = 0;
-            while (count < 10 && count < files.length) {
+            while (count < files.length && count <= files.length) {
                 try {
                     System.out.println(count + "; " + files[count]);
                     add(new JLabel(new ImageIcon(ImageIO.read(files[count]))));
